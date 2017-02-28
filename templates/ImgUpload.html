@@ -1,0 +1,19 @@
+{% extends "brands.html" %}
+
+{% block content %}
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<div class="genericbox">
+		<form action="#" method = 'post' enctype='multipart/form-data'>
+			<p>Accepted file formats: .png<br>
+			Upload an Image:<br>
+		      <input type=file name=file>
+		      <input type=submit value=Upload></p>
+		</form>
+	</div>
+</body>
+</html>
+{% endblock %}

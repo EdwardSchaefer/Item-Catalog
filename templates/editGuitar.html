@@ -1,0 +1,37 @@
+{% extends "brands.html" %}
+
+{% block content %}
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="genericbox">
+	<h1>Edit Guitar</h1>
+	<form action="#" method = 'post'>
+		<p>Name:
+			<input type='text' size='30' name='name' placeholder='{{guitar.name}}'></p>
+		<p>Body Material:
+			<input type='text' size='30' name='body_material' placeholder='{{guitar.body_material}}'></p>
+		<p>Neck Material:
+			<input type='text' size='30' name='neck_material' placeholder='{{guitar.neck_material}}'></p>
+		<p>Fingerboard Material:
+			<input type='text' size='30' name='fingerboard_material' placeholder='{{guitar.fingerboard_material}}'></p>
+		<p>Frets:
+			<input type='text' size='30' name='frets' placeholder='{{guitar.frets}}'></p>
+		<p>Strings:
+			<input type='text' size='30' name='strings' placeholder='{{guitar.strings}}'></p>
+		<p>Scale Length:
+			<input type='text' size='30' name='scale_length' placeholder='{{guitar.scale_length}}'></p>
+		<p>Pickups:
+			<input type='text' size='30' name='pickups' placeholder='{{guitar.pickups}}'></p>
+		<p>Bridge:
+			<input type='text' size='30' name='bridge' placeholder='{{guitar.bridge}}'></p>
+		<br>
+	<input type='submit' value='Edit'>
+	<a href = '#'>Cancel</a>
+	</form>
+</div>
+</body>
+</html>
+{% endblock %}

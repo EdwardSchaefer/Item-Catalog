@@ -1,0 +1,44 @@
+{% extends "brands.html" %}
+
+{% block content %}
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+		<div class="brandtitle">
+			<h1>{{brand.name}}
+			{% if user_id == brand.user_id %}
+				 | <a href = "{{url_for('newGuitar', brand_id = brand.id )}}">Create New Guitar</a>
+			{% endif %}</h1>
+	    </div>
+		<br><br>
+			{% for g in guitars %}
+			<div class="guitarbox col-m-4 col-s-12">
+				<div class="guitarcontrols">
+					{% if g.user_id == user_id %}
+						<a href='{{url_for('guitarImgUpload', brand_id = brand.id, guitar_id=g.id )}}'>Upload Image</a> |
+						<a href='{{url_for('editGuitar', brand_id = brand.id, guitar_id=g.id )}}'>Edit</a> |
+						<a href='{{url_for('deleteGuitar', brand_id = brand.id, guitar_id=g.id )}}'>Delete</a>
+					{% endif %}
+				</div>
+				<div class="guitarimg">
+					<img src="/static/img/{{brand.id}}/{{g.id}}.png" onerror="this.src='/static/img/outline.png';">
+				</div>
+				<div class="guitarinfo">
+					{{g.name}}<br>
+					Body Material: {{g.body_material}}<br>
+					Neck Material: {{g.neck_material}}<br>
+					Fingerboard Material: {{g.fingerboard_material}}<br>
+					Frets: {{g.frets}}<br>
+					Strings: {{g.strings}}<br>
+					Scale Length: {{g.scale_length}}"<br>
+					Pickups: {{g.pickups}}<br>
+					Bridge: {{g.bridge}}<br>
+				</div>
+			</div>
+			{% endfor %}
+		<br>
+</body>
+</html>
+{% endblock %}

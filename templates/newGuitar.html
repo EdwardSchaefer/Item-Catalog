@@ -1,0 +1,36 @@
+{% extends "brands.html" %}
+
+{% block content %}
+<html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<body>
+<div class="genericbox">
+	<h1>New Guitar</h1>
+	<form action="#" method = 'post' enctype='multipart/form-data'>
+		<p>Name:
+			<input type='text' size='30' name='name'></p>
+		<p>Body Material:
+			<input type='text' size='30' name='body_material'></p>
+		<p>Neck Material:
+			<input type='text' size='30' name='neck_material'></p>
+		<p>Fingerboard Material:
+			<input type='text' size='30' name='fingerboard_material'></p>
+		<p>Frets:
+			<input type='text' size='30' name='frets'></p>
+		<p>Strings:
+			<input type='text' size='30' name='strings'></p>
+		<p>Scale Length:
+			<input type='text' size='30' name='scale_length'></p>
+		<p>Pickups:
+			<input type='text' size='30' name='pickups'></p>
+		<p>Bridge:
+			<input type='text' size='30' name='bridge'></p>
+		<br>
+	<input type='submit' value='Create'>
+	</form>
+</div>
+</body>
+</html>
+{% endblock %}
