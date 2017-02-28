@@ -40,8 +40,15 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 		database 
 	*client_secrets.json: JSON file with client secrets for Google Sign in.
 	*fb_client_secrets.json: JSON file with client secrets for Facebook Login
+	*templates: Folder for HTML templates
+	*static/styles.css: CSS styles
+	*static/img: Folder for the images of guitars and brands
+	*static/img/outline.png: Default guitar image
+	*static/img/logos/defaultlogo.png: Default logo image
+	*static/img/sample: Sample images to upload
 	*README.MD: This README file
 
 #List of Changes
 ----------------
+	*2/27/17 - Added more files to list of files in README.MD
 	*2/27/17 - Initial Commit
