@@ -50,5 +50,6 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 #List of Changes
 ----------------
+	*2/28/17 - Fixed typos and formatting of JSON functions in catalog.py
 	*2/27/17 - Added more files to list of files in README.MD
 	*2/27/17 - Initial Commit

@@ -263,7 +263,7 @@ def brandGuitarJSON(brand_id):
     return jsonify(Guitar=[i.serialize for i in guitars])
 
 #Returns a JSON object of a guitar and it's specifications
-@app.route('/brand/<int:brand_id>/guitar/<int:guitar_id>/JSON')
+@app.route('/brand/<int:brand_id>/guitars/<int:guitar_id>/JSON')
 def menuItemJSON(brand_id, guitar_id):
     guitar = session.query(Guitar).filter_by(id=guitar_id).one()
     brand = session.query(Brand).filter_by(id=brand_id).one()
