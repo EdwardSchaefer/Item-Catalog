@@ -255,7 +255,7 @@ def allowed_file(filename):
     filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 #Returns JSON object of guitars from a brand with specifications
-@app.route('/brand/<int:brand_id>/guitar/JSON')
+@app.route('/brand/<int:brand_id>/guitars/JSON')
 def brandGuitarJSON(brand_id):
     brand = session.query(Brand).filter_by(id=brand_id).one()
     guitars = session.query(Guitar).filter_by(
@@ -265,8 +265,9 @@ def brandGuitarJSON(brand_id):
 #Returns a JSON object of a guitar and it's specifications
 @app.route('/brand/<int:brand_id>/guitar/<int:guitar_id>/JSON')
 def menuItemJSON(brand_id, guitar_id):
-    Guitar = session.query(Guitar).filter_by(id=guitar_id).one()
-    return jsonify(Guitar=Guitar.serialize)
+    guitar = session.query(Guitar).filter_by(id=guitar_id).one()
+    brand = session.query(Brand).filter_by(id=brand_id).one()
+    return jsonify(guitar=guitar.serialize, brand=brand.serialize)
 
 #Returns a JSON object of brands
 @app.route('/brand/JSON')
