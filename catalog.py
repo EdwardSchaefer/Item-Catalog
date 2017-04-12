@@ -60,9 +60,9 @@ def fbconnect():
 
     #Use token to get user info from API
     userinfo_url = "https://graph.facebook.com/v2.8/me"
-    #Strip expire tag from access token
-    token = result.split("&")[0]
-
+    data= json.loads(result)
+    #Extract the access token from response
+    token = 'access_token=' + data['access_token']
 
     url = 'https://graph.facebook.com/v2.8/me?%s&fields=name,id,email' % token
     h = httplib2.Http()
