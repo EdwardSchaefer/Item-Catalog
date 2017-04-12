@@ -13,21 +13,23 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 	2. Clone the [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm)
 
-	3. Clone this repository to the vagrant VM directory
+	3. Initialize Vagrant with 'vagrant init'
 
-	4. Launch the Vagrant VM with the command 'vagrant up'
+	4. Clone this repository to the vagrant VM directory
 
-	5. Log into the Vagrant VM with the command 'vagrant ssh'
+	5. Launch the Vagrant VM with the command 'vagrant up'
 
-	6. Navigate to the project's directory within the virtual machine
+	6. Log into the Vagrant VM with the command 'vagrant ssh'
 
-	7. Run database_setup.py to create the database
+	7. Navigate to the project's directory within the virtual machine
 
-	8. Run guitars.py to populate the database
+	8. Run database_setup.py to create the database
 
-	9. Run catalog.py to run the application
+	9. Run guitars.py to populate the database
 
-	10. Navigate to localhost:5000 in your browser
+	10. Run catalog.py to run the application
+
+	11. Navigate to localhost:5000 in your browser
 
 
 #List of Files
@@ -50,6 +52,7 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 #List of Changes
 ----------------
+	*4/12/17 - Added vagrant initialization step to README.MD to clarify application use
 	*4/12/17 - Changed fbconnect() function to be compatable with latest version of Facebook's Graph API
 	*4/11/17 - Removed superfluous .pyc file and .db file
 	*2/28/17 - Fixed typos and formatting of JSON functions in catalog.py
