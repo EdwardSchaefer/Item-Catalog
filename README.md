@@ -52,6 +52,7 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 #List of Changes
 ----------------
+	*4/12/17 - Shortened some data in guitars.py to conform to PostgresQL character limit
 	*4/12/17 - Started linux_deployment branch and changed database engine from SQLite to PostgresQL/psycopg2 in 3 files
 	*4/12/17 - Added vagrant initialization step to README.MD to clarify application use
 	*4/12/17 - Changed fbconnect() function to be compatable with latest version of Facebook's Graph API
