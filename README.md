@@ -29,7 +29,11 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 	10. Run catalog.py to run the application
 
-	11. Navigate to localhost:5000 in your browser
+	11. If there is an error about missing the 'requests' module, install it 
+		with the following command: 
+		"sudo apt-get install python-requests"
+
+	12. Navigate to localhost:5000 in your browser
 
 
 #List of Files
@@ -52,9 +56,18 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 #List of Changes
 ----------------
-	*4/12/17 - Added vagrant initialization step to README.MD to clarify application use
-	*4/12/17 - Changed fbconnect() function to be compatable with latest version of Facebook's Graph API
-	*4/11/17 - Removed superfluous .pyc file and .db file
-	*2/28/17 - Fixed typos and formatting of JSON functions in catalog.py
-	*2/27/17 - Added more files to list of files in README.MD
-	*2/27/17 - Initial Commit
+
+
+
+
+
+	*2/27/17: Initial Commit
+	*2/27/17: Added more files to list of files in README.MD
+	*2/28/17: Fixed typos and formatting of JSON functions in catalog.py
+	*4/11/17: Removed superfluous .pyc file and .db file
+	*4/12/17: Changed fbconnect() function to be compatable with latest 
+		version of Facebook's Graph API
+	*4/12/17: Added vagrant initialization step to README.MD to clarify 
+		application use
+	*10/16/17: Added step addressing missing module in vagrant 
+		implimentation, changed README.md formatting
