@@ -56,11 +56,6 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 
 #List of Changes
 ----------------
-<<<<<<< HEAD
-
-
-
-
 
 	*2/27/17: Initial Commit
 	*2/27/17: Added more files to list of files in README.MD
@@ -70,23 +65,9 @@ OAuth 2.0 providers including Facebook Login and Google Sign in.
 		version of Facebook's Graph API
 	*4/12/17: Added vagrant initialization step to README.MD to clarify 
 		application use
+	*4/12/17 - Started linux_deployment branch and changed database engine from SQLite to PostgresQL/psycopg2 in 3 files
+	*4/12/17 - Shortened some data in guitars.py to conform to PostgresQL character limit
+	*4/12/17 - Made CLIENT_ID path absolute
 	*10/16/17: Added step addressing missing module in vagrant 
 		implimentation, changed README.md formatting
-||||||| merged common ancestors
-	*4/12/17 - Added vagrant initialization step to README.MD to clarify application use
-	*4/12/17 - Changed fbconnect() function to be compatable with latest version of Facebook's Graph API
-	*4/11/17 - Removed superfluous .pyc file and .db file
-	*2/28/17 - Fixed typos and formatting of JSON functions in catalog.py
-	*2/27/17 - Added more files to list of files in README.MD
-	*2/27/17 - Initial Commit
-=======
-	*4/12/17 - Made CLIENT_ID path absolute
-	*4/12/17 - Shortened some data in guitars.py to conform to PostgresQL character limit
-	*4/12/17 - Started linux_deployment branch and changed database engine from SQLite to PostgresQL/psycopg2 in 3 files
-	*4/12/17 - Added vagrant initialization step to README.MD to clarify application use
-	*4/12/17 - Changed fbconnect() function to be compatable with latest version of Facebook's Graph API
-	*4/11/17 - Removed superfluous .pyc file and .db file
-	*2/28/17 - Fixed typos and formatting of JSON functions in catalog.py
-	*2/27/17 - Added more files to list of files in README.MD
-	*2/27/17 - Initial Commit
->>>>>>> linux_deployment
+	*10/29/17: Merged linux_deployment with master
