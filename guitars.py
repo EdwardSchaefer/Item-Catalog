@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from database_setup import Base, Brand, Guitar, User
 
-engine = create_engine('sqlite:///guitars.db')
+engine = create_engine('postgresql+psycopg2://catalog:test123@localhost:5432/guitars')
 # Bind the engine to the metadata of the Base class so that the
 # declaratives can be accessed through a DBSession instance
 Base.metadata.bind = engine
@@ -240,7 +240,7 @@ Guitar1 = Guitar(user_id=1,
                  strings="7",
                  scale_length="25.5",
                  pickups="Seymour Duncan SH-6 7",
-                 bridge="Floyd Rose FRT-SSO 2000 Double-Locking Tremolo (Recessed)")
+                 bridge="Floyd Rose FRT-SSO 2000 Double-Locking Tremolo")
 
 session.add(Guitar1)
 session.commit()
@@ -256,7 +256,7 @@ Guitar2 = Guitar(user_id=1,
                  strings="7",
                  scale_length="25.5",
                  pickups="Seymour Duncan JB SH-4/SH2N",
-                 bridge="Jackson Compensated and Adjustable Strings-Through-Body")
+                 bridge="Compensated and Adjustable Strings-Through")
 
 session.add(Guitar2)
 session.commit()
@@ -272,7 +272,7 @@ Guitar3 = Guitar(user_id=1,
                  strings="6",
                  scale_length="25.5",
                  pickups="Seymour Duncan SH6b/SH6n",
-                 bridge="Floyd Rose FRT-o5000 Double Locking Tremolo (Recessed)")
+                 bridge="Floyd Rose FRT-o5000 Double Locking Tremolo")
 
 session.add(Guitar3)
 session.commit()
@@ -288,7 +288,7 @@ Guitar4 = Guitar(user_id=1,
                  strings="6",
                  scale_length="25.5",
                  pickups="Jackson High Output Humbucking",
-                 bridge="Floyd Rose Special Double-Locking Tremolo (Recessed)")
+                 bridge="Floyd Rose Special Double-Locking Tremolo")
 
 session.add(Guitar4)
 session.commit()
@@ -304,7 +304,7 @@ Guitar5 = Guitar(user_id=1,
                  strings="6",
                  scale_length="25.5",
                  pickups="Jackson High Output Humbucking",
-                 bridge="Jackson Complensated and Adjustable Strings-Through-Body")
+                 bridge="Complensated and Adjustable Strings-Through")
 
 session.add(Guitar5)
 session.commit()
@@ -320,7 +320,7 @@ Guitar6 = Guitar(user_id=1,
                  strings="7",
                  scale_length="27",
                  pickups="EMG 81-7/707 Humbucking",
-                 bridge="Jackson HT7 7-String Hardtail with Strings-Through-Body")
+                 bridge="Jackson HT7 7-String Hardtail")
 
 session.add(Guitar6)
 session.commit()

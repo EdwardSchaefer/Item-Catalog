@@ -61,7 +61,7 @@ class Guitar(Base):
             'bridge': self.bridge,
         }
 
-engine = create_engine('sqlite:///guitars.db')
+engine = create_engine('postgresql+psycopg2://catalog:test123@localhost:5432/guitars')
 
 print "Database set up!"
 Base.metadata.create_all(engine)

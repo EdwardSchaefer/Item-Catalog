@@ -19,12 +19,12 @@ import requests
 UPLOAD_FOLDER = 'static/img'
 ALLOWED_EXTENSIONS = set(['png'])
 CLIENT_ID = json.loads(open(
-    'client_secrets.json', 'r').read())['web']['client_id']
+    '/var/www/html/catalog/client_secrets.json', 'r').read())['web']['client_id']
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-engine = create_engine('sqlite:///guitars.db')
+engine = create_engine('postgresql+psycopg2://catalog:test123@localhost:5432/guitars')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
