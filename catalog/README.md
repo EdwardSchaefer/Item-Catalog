@@ -44,21 +44,20 @@ version can be deployed using the master branch.
 #List of Files
 --------------
 
-	*catalog/catalog.py: The main file which runs the server and contains the Flask
+	*catalog.py: The main file which runs the server and contains the Flask
 		handlers and configurations.
-	*catalog/wsgi: The Web Server Gateway Interface script 
-	*catalog/database_setup.py: The database schema for the brands and guitars
-	*catalog/guitars.py: A list of brands and guitars specificatons to populate the
+	*database_setup.py: The database schema for the brands and guitars
+	*guitars.py: A list of brands and guitars specificatons to populate the
 		database 
-	*catalog/client_secrets.json: JSON file with client secrets for Google Sign in.
-	*catalog/fb_client_secrets.json: JSON file with client secrets for Facebook Login
-	*catalog/templates: Folder for HTML templates
-	*catalog/static/styles.css: CSS styles
-	*catalog/static/img: Folder for the images of guitars and brands
-	*catalog/static/img/outline.png: Default guitar image
-	*catalog/static/img/logos/defaultlogo.png: Default logo image
-	*catalog/static/img/sample: Sample images to upload
-	*catalog/README.MD: This README file
+	*client_secrets.json: JSON file with client secrets for Google Sign in.
+	*fb_client_secrets.json: JSON file with client secrets for Facebook Login
+	*templates: Folder for HTML templates
+	*static/styles.css: CSS styles
+	*static/img: Folder for the images of guitars and brands
+	*static/img/outline.png: Default guitar image
+	*static/img/logos/defaultlogo.png: Default logo image
+	*static/img/sample: Sample images to upload
+	*README.MD: This README file
 
 #List of Changes
 ----------------
@@ -77,5 +76,3 @@ version can be deployed using the master branch.
 	*10/16/17: Added step addressing missing module in vagrant 
 		implimentation, changed README.md formatting
 	*10/29/17: Merged linux_deployment with master
-	*10/29/17: Restructured to run with WSGI, added catalog.wsgi, added 
-		descriptions to README.md
