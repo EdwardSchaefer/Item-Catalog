@@ -79,3 +79,4 @@ version can be deployed using the master branch.
 	*10/29/17: Merged linux_deployment with master
 	*10/29/17: Restructured to run with WSGI, added catalog.wsgi, added 
 		descriptions to README.md
+	*11/04/17: Removed .py extension from catalog.wsgi
