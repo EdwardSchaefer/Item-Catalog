@@ -73,6 +73,7 @@ version can be deployed using the master branch.
 	*4/12/17 - Started linux_deployment branch and changed database engine from SQLite to PostgresQL/psycopg2 in 3 files
 	*4/12/17 - Shortened some data in guitars.py to conform to PostgresQL character limit
 	*4/12/17 - Made CLIENT_ID path absolute
-	*10/16/17: Added step addressing missing module in vagrant 
+	*10/16/17 - Added step addressing missing module in vagrant 
 		implimentation, changed README.md formatting
-	*10/29/17: Merged linux_deployment with master
+	*10/29/17 - Merged linux_deployment with master
+	*11/07/17 - Renamed catalog.py to __init__.py
