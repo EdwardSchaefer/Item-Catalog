@@ -77,3 +77,4 @@ version can be deployed using the master branch.
 		implimentation, changed README.md formatting
 	*10/29/17 - Merged linux_deployment with master
 	*11/07/17 - Renamed catalog.py to __init__.py
+	*11/14/17 - Made UPLOAD_FOLDER path for image uploads absolute, similar to CLIENT_ID path

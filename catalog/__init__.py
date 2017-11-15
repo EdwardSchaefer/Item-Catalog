@@ -16,7 +16,7 @@ import json
 from flask import make_response
 import requests
 
-UPLOAD_FOLDER = 'static/img'
+UPLOAD_FOLDER = '/var/www/html/catalog/static/img'
 ALLOWED_EXTENSIONS = set(['png'])
 CLIENT_ID = json.loads(open(
     '/var/www/html/catalog/client_secrets.json', 'r').read())['web']['client_id']
